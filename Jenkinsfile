@@ -5,7 +5,7 @@ pipeline {
         
         stage('github-clone') {
             steps {
-                git branch: 'master', credentialsId: 'github_token', url: '{REPOSITORY URL}'
+                git branch: 'master', credentialsId: 'github_20240610', url: 'https://github.com/gjh999/manager_portal.git'
             }
         }
         
