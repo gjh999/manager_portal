@@ -16,6 +16,7 @@
 package egovframework.example.sample.service;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Class Name : EgovSampleService.java
@@ -82,5 +83,21 @@ public interface EgovSampleService {
 	 * @exception
 	 */
 	int selectSampleListTotCnt(SampleDefaultVO searchVO);
+	
+	/**
+	 * 글 총 갯수를 조회한다.
+	 * @param searchVO - 조회할 정보가 담긴 VO
+	 * @return 글 총 갯수
+	 * @exception
+	 */
+	public Map<String, Object> selectResponseIssue(String encData, String apiKey, String apiUtlinsttCode) throws Exception;
+	
+	/**
+	 * 글 총 갯수를 조회한다.
+	 * @param searchVO - 조회할 정보가 담긴 VO
+	 * @return 글 총 갯수
+	 * @exception
+	 */
+	public Map<String, Object> selectTestDataList(String testData) throws Exception;
 
 }
