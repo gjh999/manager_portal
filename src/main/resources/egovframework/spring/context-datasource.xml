@@ -36,4 +36,11 @@
     </bean>
     -->
     
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="org.postgresql.Driver"/>
+        <property name="url" value="jdbc:postgresql:thin:@http://49.50.174.60/:5432:vip" />
+        <property name="username" value="manager"/>
+        <property name="password" value="@1rnwogh77"/>
+    </bean>
+    
 </beans>
